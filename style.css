@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space mono', monospace;  
+    color: hsl(184, 14%, 56%);
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.heading{
+    margin: 50px;
+    text-align: center;
+    padding: 24px;
+    /* font-size: 25px;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    letter-spacing: 5px; */
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 900px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 18px;
+    border-radius: 30px;
+}
+.billInput, .tipSelect, .peopleInput{
+    margin: 40px;
+}
+
+/* styling for the input fields */
+input{
+    text-align: right;
+    appearance: textfield;
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 5px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 385px;
+    padding-right: 9px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid hsl(186, 14%, 43%);
+}
+.inputB{
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+}
+.inputP{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+}
+.inputC{
+    width: 120px;
+    height: 50px;
+}
+
+
+/* styling for the buttons */
+.tipButtons{
+    display: grid;
+    grid-template-areas: 
+        "b1 b2 b3"
+        "b4 b5 b6";
+}
+button:nth-child(1){
+    grid-area: b1;
+}
+button:nth-child(2){
+    grid-area: b2;
+}
+button:nth-child(3){
+    grid-area: b3;
+}
+button:nth-child(4){
+    grid-area: b4;
+}
+button:nth-child(5){
+    grid-area: b5;
+}
+button:nth-child(6){
+    grid-area: b6;
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color:hsl(183, 100%, 15%);
+    color:hsl(189, 41%, 97%);
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+button:active{
+    background-color:hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+}
+
+/* styling the amount  */
+
+.content2{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-right: 50px;
+    color: hsl(189, 41%, 97%);
+    position: relative;
+}
+.tipAmount{
+    
+    margin: 40px;
+    word-wrap: break-word;
+}
+.tipA, .totalA{
+    color: hsl(189, 41%, 97%);
+    display: inline;
+}
+.person{
+    font-size: 13px; 
+}
+.tipAmountValue ,.totalAmountValue  {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    top: 20px;
+    right: 30px;
+}
+.totalAmount{
+    margin: 40px;
+}
+.totalAmountValue{
+    word-wrap: break-word;
+    top: 110px;
+    right: 30px;
+}
+.dSign , .tipAmountValueNum, .totalAmountValueNum {
+    color: hsla(184, 13%, 60%, 0.83);
+}
+
+/* styling the reset button */
+.reset{
+    text-align: center;
+}
+.resetBtn{
+    width: 320px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color:hsl(189, 41%, 97%);
+    color: hsl(183,100%,15%);
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+/* styling the error message */
+.peopleInput{
+    position: relative;
+}
+.error{
+    display: none;
+    color: hsl(25, 76%, 43%);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    float: inline-end;
+    position: absolute;
+    left: 265px;
+    top: -5px;
+}
+
+/* styling the footer */
+.attribution{
+    text-align: center;
+    margin-top: 50px;
+    color: hsl(183, 100%, 15%);
+    font-size: 15px;
+    font-weight: 700;
+    display: none;
+}

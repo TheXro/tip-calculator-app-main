@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="heading">
+    <img src="./images/logo.svg" alt="logo">           
+  </div>
+
+  <div class="container">
+    <div class="content1">
+      <div class="billInput">
+        <span>Bill</span>
+        <div class="input">
+          <input type="number" class="inputB" placeholder="0" step=".01" min="0" max="50000" >
+        </div>
+      </div>
+
+      <div class="tipSelect">
+        <span>Select Tip %</span>
+        <div class="tipButtons">
+          <button class="btn5">5%</button>
+          <button class="btn10">10%</button>
+          <button class="btn15">15%</button>
+          <button class="btn25">25%</button>
+          <button class="btn50">50%</button>
+          <input type="number" placeholder="Custom" class="inputC" min="0" max="100">
+        </div>
+      </div>
+
+      <div class="peopleInput">
+        <span>Number of People</span><span class="error">Can't be zero</span>
+        <div class="input">
+          <input type="number" placeholder="1" step="1" min="1" class="inputP" max="50000" >
+        </div> 
+      </div>
+    </div>
+
+    <div class="content2">
+      <div class="tipAmount">
+        <div class="tipA">Tip Amount</div>
+        <div class="person">/ person</div>
+        <div class="tipAmountValue">
+          <span class="dSign">$</span><span class="tipAmountValueNum">0.00</span>
+        </div>
+      </div>
+
+      <div class="totalAmount">
+        <div class="totalA">Total</div>
+        <div class="person">/ person</div>
+        <div class="totalAmountValue">
+          <span class="dSign">$</span><span class="totalAmountValueNum">0.00</span>
+        </div>
+      </div>
+
+      <div class="reset">
+        <button class="resetBtn">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">TheXro</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

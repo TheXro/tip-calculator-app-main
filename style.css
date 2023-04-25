@@ -202,5 +202,25 @@ button:active{
     color: hsl(183, 100%, 15%);
     font-size: 15px;
     font-weight: 700;
-    display: none;
+    display: block;
 }
+
+/* making it responsive */
+
+@media screen and (max-width: 900px) {
+    .container{
+        grid-template-areas: "cont1"
+                             "cont2";
+        overflow: hidden;
+        width: 100%;
+        overflow: hidden;
+    }
+    .content1{
+        grid-area: cont1;
+    }
+    .content2{
+        grid-area: cont2;
+        margin-bottom: 15px;
+    }
+}
+    
